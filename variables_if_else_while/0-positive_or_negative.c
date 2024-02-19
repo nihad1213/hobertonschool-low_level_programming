@@ -6,8 +6,6 @@
 /* betty style doc for function main goes there */
 /*
  *main - show us number is negative or not
- *
- *
  * */
 
 
