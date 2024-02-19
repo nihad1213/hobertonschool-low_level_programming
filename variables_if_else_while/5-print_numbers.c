@@ -4,7 +4,6 @@
  * main - print numbers from 0 to 10
  *
  * return always 0
- *
  */
 int main(void)
 {
