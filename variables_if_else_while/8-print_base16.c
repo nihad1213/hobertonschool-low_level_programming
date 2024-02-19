@@ -2,16 +2,16 @@
 
 
 /**
- * main - Prints the alphabet in lowercase.
+ * main - Prints numbers in hexadecimal.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	char letter;
-
-	for (letter = 'a'; letter <= 'z'; letter++)
-		putchar(letter);
+	char hexDigits[] = "0123456789abcdef";
+	int i;
+	for (i = 0; i < 16; i++)
+		putchar(hexDigits[i]);
 
 	putchar('\n');
 
