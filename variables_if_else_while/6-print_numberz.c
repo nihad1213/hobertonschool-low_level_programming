@@ -2,7 +2,7 @@
 
 /**
  * main - print number 0 to 10
- * 
+ *
  * Return: Always 0
  */
 
