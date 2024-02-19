@@ -10,7 +10,6 @@ int main(void)
 {
 	int number;
 	char letter;
-	
 	/*print number part*/
 	for (number = 0; number < 10; number++)
 		putchar((number % 10) + '0');
