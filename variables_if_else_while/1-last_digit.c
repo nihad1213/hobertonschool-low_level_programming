@@ -5,8 +5,9 @@
 /**
  * main - Prints a text according number
  *
- * Return 0 - end program
- */
+ * Return: Always (Success)
+ * 
+ * */
 int main(void)
 {
 	int n, lastd;
