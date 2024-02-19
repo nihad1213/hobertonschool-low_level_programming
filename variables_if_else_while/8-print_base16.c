@@ -13,7 +13,7 @@ int main(void)
 	
 	/*print number part*/
 	for (number = 0; number < 10; number++)
-		putchar((num % 10) + '0');
+		putchar((number % 10) + '0');
 
 	/*print letter part*/
 	for (letter = 'a'; letter <= 'f'; letter++)
