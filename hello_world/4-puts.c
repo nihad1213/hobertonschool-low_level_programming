@@ -7,9 +7,9 @@
 #include<stdio.h>
 
 /*
-* puts() print string
-* return (0) always return 0
-* main prints "Programming is like building a multilingual puzzle"
+* puts() - print string
+* return (0) - always return 0
+* main - prints "Programming is like building a multilingual puzzle"
 */
 
 
