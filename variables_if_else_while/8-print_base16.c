@@ -8,11 +8,18 @@
  */
 int main(void)
 {
-	char hexDigits[] = "0123456789abcdef";
-	int i;
+	int number;
+	char letter;
 	
-	for (i = 0; i < 16; i++)
-		putchar(hexDigits[i]);
+	//print number part
+	for (number = 0; number < 10; number++)
+		putchar((num % 10) + '0');
+
+	//print letter part
+	for (letter = 'a'; letter <= 'f'; letter++)
+		putchar(letter);
+
 	putchar('\n');
+
 	return (0);
 }
