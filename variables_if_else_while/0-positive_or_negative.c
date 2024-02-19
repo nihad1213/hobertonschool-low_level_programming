@@ -5,6 +5,7 @@
 /**
  * main - Prints if number is positive, zero or negative
  *
+ * retirn (0) - always rreturn 0
  */
 int main(void)
 {
