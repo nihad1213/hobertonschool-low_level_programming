@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
-* main - print numbers from 0 to 10
-*
-* return always 0
-*
+ * main - print numbers from 0 to 10
+ *
+ * return always 0
+ *
  */
 int main(void)
 {
