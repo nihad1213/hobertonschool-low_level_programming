@@ -4,9 +4,11 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
-/*
- *main - show us number is negative or not
- * */
+/**
+ * main - Prints if number is positive, zero or negative
+ *
+ * Return: Always (Success)
+ */
 
 
 
