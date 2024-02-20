@@ -5,16 +5,22 @@
  * Return:0
  */
 
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
-	char c = 'a';
+	char ch;
+	int i;
 
-	while (c <= 'z')
+	i = 0;
+
+	while (i < 10)
 	{
-		_putchar(10 * c);
-		c++;
-
+		ch = 'a';
+		while (ch <= 'z')
+		{
+			_putchar(ch);
+			ch++;
+		}
+		_putchar('\n');
+		i++;
 	}
-	_putchar('\n');
-
 }
