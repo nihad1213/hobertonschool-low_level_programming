@@ -1,18 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - prints the lowercase alphabet in reverse.
- *
- * Return: Always 0.
- */
-int main(void)
+  * print_last_digit - Prints the last digit of a number
+  * @n: The number to be treated
+  *
+  * Return: Value of the last digit of number
+  */
+int print_last_digit(int n)
 {
-	char letter;
+	int last;
 
-	for (letter = 'z'; letter >= 'a'; letter--)
-		putchar(letter);
+	last = n % 10;
 
-	putchar('\n');
+	if (last < 0)
+	{
+		last = last * -1;
+	}
 
-	return (0);
+	_putchar(last + '0');
+
+	return (last);
 }
