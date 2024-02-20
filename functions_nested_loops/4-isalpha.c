@@ -5,18 +5,15 @@
  *
  * Return: Always 0.
  */
-int main(void)
-{
-    int r;
+#include "main.h"
 
-    r = _isalpha('H');
-    _putchar(r + '0');
-    r = _isalpha('o');
-    _putchar(r + '0');
-    r = _isalpha(108);
-    _putchar(r + '0');
-    r = _isalpha(';');
-    _putchar(r + '0');
-    _putchar('\n');
-    return (0);
+/**
+  * _islower - Checks for lowercase character
+  * @c: The character to be checked
+  *
+  * Return: lowercase
+  */
+int _islower(int c)
+{
+	return (c <= 'a' && c >= 'z');
 }
