@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
   *main - print number from 0 to 98
