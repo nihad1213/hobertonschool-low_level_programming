@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
-  * adding 2 value
-  *
-  *return: sum of this values
+  * add - Adds two values
+  * Return: Sum of n1 and n2
   */
 int add(int n1, int n2)
 {
