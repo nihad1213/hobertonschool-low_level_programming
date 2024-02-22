@@ -3,8 +3,8 @@
 
 /**
   * print_to_98 - print number from 0 to 98
-  * @n - number begin to print
   *
+  * @n - number begin to print
   */
 void print_to_98(int n)
 {
