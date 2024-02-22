@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /**
-  *main - print number from 0 to 98
-  *@n - number
-  *return - n
+  * print_to_98 - print number from 0 to 98
+  * @n - number
+  *
+  * return - n
   */
 void print_to_98(int n)
 {
