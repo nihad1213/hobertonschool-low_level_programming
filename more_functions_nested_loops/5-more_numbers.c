@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * more_numbers - print numbers
- * 
  * Return: always true
  */
 void more_numbers(void)
