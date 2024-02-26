@@ -21,26 +21,19 @@ void print_triangle(int size)
         		// loop for printing leading whitespaces 
         		for (int j = 0; j < 2 * (size - i) - 1; j++)
         		{ 
-            			_puts(' '); 
+            			_putchar(' '); 
         		} 
   
         		// loop for printing * character 
         		for (int k = 0; k <= i; k++)
         		{ 
-            			_puts('# '); 
+            			_putchar('# '); 
         		} 
-        		printf("\n"); 
+        		_putchar("\n"); 
         	}
 	}
 	else
 	{
-	printf("\n");
+	_putchar("\n");
 	}
-}
-
-int main () 
-{
-    
-    print_triangle(3);
-    return 0;
 }
