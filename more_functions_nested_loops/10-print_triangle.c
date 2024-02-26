@@ -15,17 +15,17 @@ void print_triangle(int size)
 
 	if (size > 0)
 	{
-		for (int i = 0; i < size; i++) 
+		for (i = 0; i < size; i++) 
 		{ 
   
         		// loop for printing leading whitespaces 
-        		for (int j = 0; j < 2 * (size - i) - 1; j++)
+        		for (j = 0; j < 2 * (size - i) - 1; j++)
         		{ 
             			_putchar(' '); 
         		} 
   
         		// loop for printing * character 
-        		for (int k = 0; k <= i; k++)
+        		for (k = 0; k <= i; k++)
         		{ 
             			_putchar('# '); 
         		} 
