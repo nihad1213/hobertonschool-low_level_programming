@@ -12,8 +12,7 @@ void print_triangle(int size)
 	int i;
 	int j;
 	int k;
-	char space;
-	space = ' ';
+	char space = '0';
 
 	if (size > 0)
 	{
