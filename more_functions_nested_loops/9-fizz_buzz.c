@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+/**
+ * main - entry point
+ *
+ * Fizz for multiples of 3.
+ * Buzz for multiples of 5.
+ * FizzBuzz for multiples 3 and 5.
+ * Return: 0
+ */
 int main(void)
 {
   int i;
@@ -14,7 +22,7 @@ int main(void)
       printf("Buzz");
     else
       printf("%d", i);
-  /*make tab between numbers*/
+    /*make tab between numbers*/
     if (i < 100)
       printf(" ");
   }
