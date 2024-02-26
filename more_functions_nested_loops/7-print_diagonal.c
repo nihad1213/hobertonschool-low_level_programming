@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_diagonal: print dioganel
+ * print_diagonal - print dioganel
  * @n: define size of dioganal
  * Return: void
  */
