@@ -4,6 +4,7 @@
 /**
  * _isupper() - check character is uppercase or not
  *
+ * @c - character
  * return 1 - if character uppercase
  *
  * return 0 - otherwise 
