@@ -12,7 +12,6 @@ void print_triangle(int size)
 	int i;
 	int j;
 	int k;
-	char space = '0';
 
 	if (size > 0)
 	{
@@ -27,7 +26,7 @@ void print_triangle(int size)
  
         		for (k = 0; k <= i; k++)
         		{ 
-            			_putchar('#' + space);
+            			_putchar('# ');
 			}
         		_putchar('\n'); 
         	}
