@@ -27,13 +27,13 @@ void print_triangle(int size)
         		// loop for printing * character 
         		for (k = 0; k <= i; k++)
         		{ 
-            			_putchar('# '); 
+            			_putchar('#'); 
         		} 
-        		_putchar("\n"); 
+        		_putchar('\n'); 
         	}
 	}
 	else
 	{
-	_putchar("\n");
+	_putchar('\n');
 	}
 }
