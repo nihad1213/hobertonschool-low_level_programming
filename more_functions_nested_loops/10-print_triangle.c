@@ -23,11 +23,10 @@ void print_triangle(int size)
         	for (k = 0; k <= i; k++) {
             		_putchar('#');			
         	}
-        
+
+		if (size <= 0)
+			_putchar('\n');
+		
         	_putchar('\n');
 	}
-
-	if (size <= 0)
-		_putchar('\n');
-
 }
