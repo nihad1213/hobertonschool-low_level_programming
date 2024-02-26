@@ -15,21 +15,32 @@ void print_triangle(int size)
 
 	if (size > 0)
 	{
-		for (i = 1; i <= size; i++)
-		{
-			for (j = 1; j < 2 * (size - i); j++)
-			{
-				_putchar(' ');
-			}
-        
-        		for (k = 1; k <= i; k++) {
-            			_putchar('#');
-        		}
-			_putchar('\n');
-		}
+		for (int i = 0; i < size; i++) 
+		{ 
+  
+        		// loop for printing leading whitespaces 
+        		for (int j = 0; j < 2 * (size - i) - 1; j++)
+        		{ 
+            			printf(" "); 
+        		} 
+  
+        		// loop for printing * character 
+        		for (int k = 0; k <= i; k++)
+        		{ 
+            			printf("# "); 
+        		} 
+        		printf("\n"); 
+        	}
 	}
 	else
 	{
-	_putchar('\n');
+	printf("\n");
 	}
+}
+
+int main () 
+{
+    
+    print_triangle(3);
+    return 0;
 }
