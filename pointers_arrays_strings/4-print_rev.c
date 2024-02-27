@@ -4,7 +4,7 @@
  * @s: string
  * Return: void
  */
-print_rev(char *s)
+void print_rev(char *s)
 {
 	int length = 0;
 
