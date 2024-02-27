@@ -13,11 +13,11 @@ void _puts(char *str)
 	{
 		if (*(length + str) != '"')
 		{
-			_puts(*(str + length));
+			_putchar(*(str + length));
 		}
 
 		length++;
 	}
 
-	_puts('\n');
+	_putchar('\n');
 }
