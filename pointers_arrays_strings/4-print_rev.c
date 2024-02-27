@@ -18,9 +18,9 @@ print_rev(char *s)
 
 	while (length >= 0)
 	{
-		if (*(length + str) != '"' && length2 != 0)
+		if (*(length + s) != '"' && length2 != 0)
 		{
-			_putchar(*(str + length));
+			_putchar(*(s + length));
 		}
 	}
 
