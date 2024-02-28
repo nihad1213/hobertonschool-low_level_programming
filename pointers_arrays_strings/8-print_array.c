@@ -2,15 +2,14 @@
 #include <stdio.h>
 
 /**
- * print_array - print elements of array 
+ * print_array - print elements of array
  * @n: number of elements
  * @a: elements
  * Return: void
  */
 void print_array(int *a, int n)
 {
-	int i = 0;
-	
+	int i = 0;	
 	while (i < n)
 	{
 
@@ -20,7 +19,7 @@ void print_array(int *a, int n)
 		}
 		else
 		{
-			printf("%d", a[i]);		
+			printf("%d", a[i]);	
 		}
 	i++;
 	}
