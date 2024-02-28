@@ -10,11 +10,13 @@
 void print_array(int *a, int n)
 {
 	int i;
+	/*get size of array*/
+	size_t arraySize;
+	arraySize = sizeof(arr) / sizeof(arr[0]);
 
-	while (i < n)
+	/*print numbers with loop*/
+	for (i = 0; i < arraySize; i++)
 	{
-		printf("%d, ", a[i]);
-		i++;
+		printf("%d, ", arr[i]);
 	}
-
 }
