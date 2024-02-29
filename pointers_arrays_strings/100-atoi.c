@@ -29,7 +29,7 @@ int _atoi(char *s)
 	{
 		sum = sum * 10;
 		sum = sum + *s - '0';
-		sum++
+		sum++;
 	}
 	
 	if (sign == -1)
@@ -38,7 +38,7 @@ int _atoi(char *s)
 	}
 	else
 	{
-		finalResult = sum	
+		finalResult = sum;	
 	}
 
 	return (finalResult);
