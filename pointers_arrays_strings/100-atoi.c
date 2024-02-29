@@ -3,7 +3,7 @@
 /**
  * _atoi() - convert string to an integer
  * @s: string
- * Return: 0
+ * Return: number
  */
 int _atoi(char *s)
 {
@@ -12,8 +12,8 @@ int _atoi(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		num = num * 10 + (s[i] - 0);	
+		num = num * 10 + (s[i] - '0');	
 	}
 
-	return (0);
+	return (num);
 }
