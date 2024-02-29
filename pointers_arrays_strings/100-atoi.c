@@ -11,7 +11,7 @@ int _atoi(char *s)
 	int sum = 0;
 	int finalResult = 0;
 
-	for (;*s != '\0'; s++)
+	for (; *s != '\0'; s++)
 	{
 		if (*s == '-')
 		{
