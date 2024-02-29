@@ -10,17 +10,13 @@ int _atoi(char *s)
 	int i;
 	int num = 0;
 	
+	if (s[0] == '-')
+	{
+		num = (-1) * num
+	}
+	
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[0] == '-')
-		{
-			num = num * (-1);
-		}
-		else
-		{
-			num = 1 * num;
-		}
-
 		num = num * 10 + (s[i] - '0');
 	}
 
