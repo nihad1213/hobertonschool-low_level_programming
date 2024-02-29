@@ -27,7 +27,7 @@ void randomPasswordGeneration()
 	/*array of uppercase letters*/ 
 	char uppercaseLetters[] = "ABCDEFGHHIJKLMNOPQRSTUWXYZ";
 	
-	//change length from here
+	/*change length from here*/
 	int N = 10;
 	
 	/*hold password*/
@@ -74,7 +74,7 @@ void randomPasswordGeneration()
 
 int main()
 {
-	//change length from here again
+	/*change length from here again*/
 	int N = 10;
 	randomPasswordGeneration(N);
 
