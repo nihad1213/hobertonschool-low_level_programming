@@ -8,11 +8,11 @@
 int _atoi(char *s)
 {
 	int i;
-	int num = 0;
+	int nb = 0;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		num = num * 10 + (s[i] - 48);	
+		nb = nb * 10 + (s[i] - 48);	
 	}
 
 	return (0);
