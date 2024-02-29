@@ -14,7 +14,7 @@ int _atoi(char *s)
 	{
 		num = num * 10 + (s[i] - '0');
 		
-		if (*s == '-')
+		if (s[0] == '-')
 		{
 			num = (-1) * num;
 		}	
