@@ -11,6 +11,9 @@ void randomPasswordGeneration()
 	
 	int i = 0;
 	int random = 0;
+
+	/*hold password*/
+	char password[8];
 	
 	/*change length*/
 	int N = 8;
@@ -29,11 +32,6 @@ void randomPasswordGeneration()
 	
 	/*numbes will be different*/
 	srand((unsigned int) time(NULL));
-	
-	
-	
-	/*hold password*/
-	char password[8];
 
 	random = rand() % 4;
 	
