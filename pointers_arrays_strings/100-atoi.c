@@ -12,7 +12,7 @@ int _atoi(char *s)
 	
 	if (s[0] == '-')
 	{
-		num = (-1) * num
+		num = (-1) * num;
 	}
 	
 	for (i = 0; s[i] != '\0'; i++)
