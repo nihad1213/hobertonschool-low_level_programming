@@ -27,6 +27,6 @@ int _atoi(char *s)
 			i++;
 		}
 
-		return (val * minus);
 	}
+	return (val * minus);
 }
