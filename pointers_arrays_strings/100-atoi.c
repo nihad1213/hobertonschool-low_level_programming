@@ -5,7 +5,7 @@
  * @s: string
  * Return: 0
  */
-int -atoi(char *s)
+int _atoi(char *s)
 {
 	int i;
 	int num = 0;
@@ -15,4 +15,5 @@ int -atoi(char *s)
 		num = num * 10 + (s[i] - 48);	
 	}
 
+	return (0);
 }
