@@ -11,7 +11,7 @@ int _atoi(char *s)
 	int val = 0;
 	int minus = -1;
 	
-	while(s[i] == '32' || (s[i] >= 9 && s[i] <= '13'))
+	while(s[i] == 32 || (s[i] >= 9 && s[i] <= 13))
 	{
 		i++;
 
@@ -21,7 +21,7 @@ int _atoi(char *s)
 			i++;
 		}
 
-		while (s[i] >= '48' && s[i] <= '57')
+		while (s[i] >= 48 && s[i] <= 57)
 		{
 			val = val * 10 + (s[i] - '0');
 			i++;
