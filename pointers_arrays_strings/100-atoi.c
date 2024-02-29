@@ -11,10 +11,8 @@ int _atoi(char *s)
 	int sum = 0;
 	int finalResult = 0;
 
-	while (*s != '\0')
+	for (; *s != '\0'; s++)
 	{
-		s++;
-
 		if (*s == '-')
 		{
 			sign *= -1;
