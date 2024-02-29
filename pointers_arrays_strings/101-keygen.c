@@ -11,10 +11,7 @@ void randomPasswordGeneration()
 	
 	int i = 0;
 	int random = 0;
-	
-	/*numbes will be different*/
-	srand((unsigned int) time(NULL));
-	
+
 	/*arrays of numbers*/
 	char numbers[] = "0123456789";
 
@@ -26,6 +23,8 @@ void randomPasswordGeneration()
 
 	/*array of uppercase letters*/ 
 	char uppercaseLetters[] = "ABCDEFGHHIJKLMNOPQRSTUWXYZ";
+	/*numbes will be different*/
+	srand((unsigned int) time(NULL));
 	
 	/*change length*/
 	int N = 8;
