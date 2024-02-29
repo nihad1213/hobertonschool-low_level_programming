@@ -10,7 +10,7 @@ void randomPasswordGeneration()
 	/*Creating arrays that hold symbols, letters, numbers, uppercase letters*/	
 	
 	int i = 0;
-	in random = 0;
+	int random = 0;
 	
 	/*numbes will be different*/
 	srand((unsigned int) time(NULL));
