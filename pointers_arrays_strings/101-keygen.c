@@ -30,7 +30,7 @@ void randomPasswordGeneration()
 	/*hold password*/
 	char password[N];
 
-	rand = rand() % 4;
+	random = rand() % 4;
 
 	for (i = 0; i < N; i++)
 	{
