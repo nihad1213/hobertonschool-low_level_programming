@@ -7,18 +7,27 @@
  */
 int _atoi(char *s)
 {
-	int i;
-	int num = 0;
+	int i = 0;
 	
-	if (s[0] == '-')
+	while(s[i] == 32 || (s[i] >= 9 && s[i] <= 13))
 	{
-		num = (-1) * num;
-	}
-	
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		num = num * 10 + (s[i] - '0');
-	}
+		i++;
+		int minus = 1;
 
-	return (num);
+		if (s[i] == '-')
+		{
+			minus = -1;
+			i++;
+		}
+
+		int val = 0;
+
+		while (s[i] >= 48 && s[i] <= 57)
+		{
+			val = val * 10 + (s[i] - '0')
+			i++
+		}
+
+		return (val * minus);
+	}
 }
