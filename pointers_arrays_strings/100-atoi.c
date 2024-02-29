@@ -3,30 +3,43 @@
 /**
  * _atoi() - convert string to an integer
  * @s: string
- * Return: number
+ * Return: final Result
  */
 int _atoi(char *s)
 {
-	int i = 0;
-	int val = 0;
-	int minus = -1;
-	
-	while(s[i] == '32' || (s[i] >= 9 && s[i] <= '13'))
+	int sign = 1;
+	int sum = 0;
+	int finalResult = 0;
+
+	while ( *s != '\0')
 	{
-		i++;
+		s++;
 
-		if (s[i] == '-')
+		if ( *s == '-')
 		{
-			minus = -1;
-			i++;
+			signs *= -1;
 		}
-
-		while (s[i] >= '48' && s[i] <= '57')
+		else if ( *s >= '0' && *s < '9')
 		{
-			val = val * 10 + (s[i] - '0');
-			i++;
+			break;
 		}
-
 	}
-	return (val * minus);
+
+	while (*s >= '0' && *s <= '9')
+	{
+		sum = sum * 10;
+		sum = sum + *s - '0';
+		sum++
+	}
+	
+	if (sign == -1)
+	{
+		finalResult = -sum;
+	}
+	else
+	{
+		finalResult = sum	
+	}
+
+	return (finalResult);
 }
