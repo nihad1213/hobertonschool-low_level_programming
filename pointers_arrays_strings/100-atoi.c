@@ -12,11 +12,12 @@ int _atoi(char *s)
 	
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (s[i] < 0)
+		num = num * 10 + (s[i] - '0');
+		
+		if (*s == '-')
 		{
 			num = (-1) * num;
-		}
-		num = num * 10 + (s[i] - '0');
+		}	
 	}
 
 	return (num);
