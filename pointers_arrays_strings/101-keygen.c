@@ -39,12 +39,40 @@ void randomPasswordGeneration()
 			password[i] = numbers[rand() % 10];
 			random = rand() % 4;
 			printf("%c", password[i]);
-		}	
+		}
+		else if (random == 2)
+		{
+			password[i] = letters[rand() % 26];
+			random = rand() % 4;
+			printf("%c", password[i]);
+		}
+		else if (random == 3)
+		{
+			password[i] = symbols[rand() % 10];
+			random = rand() % 4;
+			printf("%c", password[i]);
+		}
+		else if (random == 4)
+		{
+			password[i] = uppercaseLetters[rand() % 26];
+			random = rand() % 4;
+			printf("%c", password[i]);
+		}
+		else
+		{
+			password[i] = letters[rand() % 26];
+			random = rand() % 4;
+			printf("%c", password[i]);
+		}
+		
 	}
 
 }
 
 int main()
 {
-	
+	int N = 10;
+	randomPasswordGeneration(N);
+
+	return 0;
 }
