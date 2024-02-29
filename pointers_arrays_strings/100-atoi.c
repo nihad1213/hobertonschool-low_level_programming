@@ -7,37 +7,27 @@
  */
 int _atoi(char *s)
 {
-	int sign = 1;
-	int sum = 0;
-	int finalResult = 0;
+	int bool;
+	int i, sign, result;
 
-	for (; *s != '\0'; s++)
+	i = sign = result = bool = 0;
+	sign = -1;
+
+	while (s[i] != '\0')
 	{
-		if (*s == '-')
-		{
+		if (s[i] == '-')
 			sign *= -1;
-		}
-		else if (*s >= '0' && *s < '9')
+
+		if (s[i] >= '0' && s[i] <= '9')
 		{
-			break;
+			result *= 10;
+			result -= (s[i] - '0');
+			bool = 1;
 		}
+		else if (bool == 1)
+			break;
+		i++;
 	}
-
-	while (*s >= '0' && *s <= '9')
-	{
-		sum = sum * 10;
-		sum = sum + *s - '0';
-		sum++;
-	}
-	
-	if (sign == -1)
-	{
-		finalResult = -sum;
-	}
-	else
-	{
-		finalResult = sum;	
-	}
-
-	return (finalResult);
+	result *= sign;
+	return (result);
 }
