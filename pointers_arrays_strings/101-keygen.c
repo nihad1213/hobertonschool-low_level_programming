@@ -31,7 +31,7 @@ void randomPasswordGeneration()
 	int N = 8;
 	
 	/*hold password*/
-	char password[N];
+	char password[8];
 
 	random = rand() % 4;
 	
