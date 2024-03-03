@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _strncat - concat 2 string
+* _strcat - concat 2 string
 * @dest: dest string
 * @src:src string
 * Return: dest
