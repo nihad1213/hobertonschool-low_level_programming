@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* cap_string - converts string words to uppercase
+* _strlen - get string length
 * @str: string
 * Return: len
  */
