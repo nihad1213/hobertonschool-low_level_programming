@@ -1,9 +1,9 @@
 #include "main.h"
 
-/** 
+/**
 * cap_string - converts string words to uppercase
 * @str: string
-* Return: 
+* Return: len
  */
 int _strlen(char *s)
 {
