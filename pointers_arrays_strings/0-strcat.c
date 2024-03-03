@@ -4,7 +4,6 @@
 * _strncat - concat 2 string
 * @dest: dest string
 * @src:src string
-* @n: integer
 * Return: dest
 */
 char *_strcat(char *dest, char *src)
