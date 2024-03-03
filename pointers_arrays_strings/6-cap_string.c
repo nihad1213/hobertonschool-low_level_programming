@@ -5,22 +5,56 @@
 * @str: string
 * Return: 
  */
-char *cap_string(char *str)
+int _strlen(char *s)
 {
-	int i;
+	int len = 0;
 
-	if (s[0] > 96 && s[0] < 123)
-		s[0] -= 32;
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s++)
 	{
-		switch (s[i])
+		len++;
+	}
+	return (len);
+}
+/**
+ *cap_string - changes all lowercase letters
+ *@s1: pointer parameter"
+ *Description: changes all lowercase letters
+ *Return: return pointer
+ */
+char *cap_string(char *s1)
+{
+	int i, j;
+
+	for (i = 0; i < _strlen(s1) - 1; i++)
+	{
+		if (
+			s1[i] == ' ' ||
+			s1[i] == '\t' ||
+			s1[i] == '\n' ||
+			s1[i] == ',' ||
+			s1[i] == ';' ||
+			s1[i] == '.' ||
+			s1[i] == '!' ||
+			s1[i] == '?' ||
+			s1[i] == '"' ||
+			s1[i] == '(' ||
+			s1[i] == ')' ||
+			s1[i] == '{' ||
+			s1[i] == '}' ||
+			i == 0
+		)
 		{
-		case ' ': case '\n': case '\t': case ',':
-		case ';': case '.': case '!': case '?': case '"':
-		case '(': case ')': case '{': case '}':
-			if (s[i + 1] > 96 && s[i + 1] < 123)
-				s[i + 1] -= 32;
+			for (j = 'a'; j <= 'z'; j++)
+			{
+				if (s1[i + 1] == j && i != 0)
+				{
+					s1[i + 1] = j - 32;
+				} else if (s1[i] == j && i == 0)
+				{
+					s1[i] = j - 32;
+				}
+			}
 		}
 	}
-	return (s);
+	return (s1);
 }
