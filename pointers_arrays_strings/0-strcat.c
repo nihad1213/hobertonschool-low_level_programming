@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
 * _strncat - concat 2 string
 * @dest: dest string
