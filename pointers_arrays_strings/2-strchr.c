@@ -7,13 +7,13 @@
  * @c: character
  * Return: Null
  */
-char *_strchr(char *s, char c)
+char *_strchr ( char *s, char c )
 {
 	while ( *s && *s != c )
 	{
 		++s;
 	}
-	if (c == *s)
+	if ( c == *s )
 	{
 		return ( char * )s;
 	}
