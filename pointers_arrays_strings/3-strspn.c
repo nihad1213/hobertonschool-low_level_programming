@@ -11,7 +11,7 @@ unsigned int_strspn(char *s, char *accept)
 {
 	unsigned int length = 0;
 
-	if ((s == NULL) && (accept == NULL))
+	if ((s == NULL) || (accept == NULL))
 	{
 		return length;
 	}
