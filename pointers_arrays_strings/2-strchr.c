@@ -9,13 +9,18 @@
  */
 char *_strchr(char *s, char c)
 {
-	char *ptr;
-
-	if (s == NULL)
-		return (NULL);
-	for (ptr = s; *ptr; ptr++)
+	for (;; s++)
 	{
-		if (*ptr == c)
-			return (ptr);
+		if (*str == c)
+		{
+			return s;
+		}
+
+		if (!*s)
+		{
+			return NULL;	
+		}
+
+		return NULL;
 	}
 }
