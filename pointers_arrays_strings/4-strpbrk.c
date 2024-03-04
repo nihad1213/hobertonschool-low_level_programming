@@ -27,7 +27,7 @@ char *_strchr(char *s, char c)
  * _strpbrk - searches string got any of a set
  *  of bytes
  *  @s: string 1
- *  @acceopt: character
+ *  @accept: character
  *  Return: byte or NULL
  */
 char *_strpbrk(char *s, char *accept)
