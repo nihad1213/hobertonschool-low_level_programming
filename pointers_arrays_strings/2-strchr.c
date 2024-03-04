@@ -11,9 +11,9 @@ char *_strchr(char *s, char c)
 {
 	char *ptr;
 
-	if (str == NULL)
+	if (s == NULL)
 		return (NULL);
-	for (ptr = str; *ptr; ptr++)
+	for (ptr = s; *ptr; ptr++)
 	{
 		if (*ptr == c)
 			return (ptr);
