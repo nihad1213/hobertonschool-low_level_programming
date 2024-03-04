@@ -9,6 +9,7 @@ void print_chessboard(char (*a)[8])
 {
 	int wide;
 	int length;
+
 	wide = 0;
 	length = 0;
 
