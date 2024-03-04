@@ -37,7 +37,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	if ((s == NULL) || (accept == NULL))
 	{
-		return length;
+		return (length);
 	}
 	while (*s && _strchr(accept, *s++))
 	{
