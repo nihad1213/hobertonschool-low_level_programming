@@ -2,23 +2,23 @@
 #include <stddef.h>
 
 /**
- * _strcmp - compare 2 string
- * @s1: string 1
- * @s2: string 2
+ * _strstr - locate substring
+ * @haystack: string 1
+ * @needle: string 2
  * Return: NULL
  */
 char *_strstr(char *haystack, char *needle)
 {
 	 int i;
 
-	 if (*needle == 0)
-	 {
-	 	return (haystack);
-	 }
+	if (*needle == 0)
+	{
+		return (haystack);
+	}
 
-	 while (*haystack)
-	 {
-	 	i = 0;
+	while (*haystack)
+	{
+		i = 0;
 
 		if (haystack[i] == needle[i])
 		{
