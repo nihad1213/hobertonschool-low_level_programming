@@ -18,6 +18,5 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	{
 		typeCastDest[i] = typeCastSrc[i];
 	}
-	
 	return (dest);
 }
