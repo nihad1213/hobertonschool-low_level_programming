@@ -7,7 +7,7 @@
  * @accept: string 2
  * Return: number of bytes
  */
-unsigned int_strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int length = 0;
 
