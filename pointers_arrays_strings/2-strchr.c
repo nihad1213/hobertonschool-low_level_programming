@@ -9,6 +9,6 @@
  */
 char *_strchr(char *s, char c)
 {
-	while ( *str && *str != ch ) ++str;
-    	return ( char * )( ch == *str ? str : NULL ); 
+	while ( *s && *s != c ) ++s;
+    	return ( char * )( c == *s ? s : NULL ); 
 }
