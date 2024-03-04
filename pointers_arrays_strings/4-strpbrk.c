@@ -23,7 +23,7 @@ char *_strchr(char *s, char c)
 }
 
 /**
- * -strpbrk - searches string got any of a set
+ * _strpbrk - searches string got any of a set
  *  of bytes
  *  @s: string 1
  *  @acceopt: character
