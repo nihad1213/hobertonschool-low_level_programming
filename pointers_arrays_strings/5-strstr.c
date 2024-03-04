@@ -7,35 +7,29 @@
  * @s2: string 2
  * Return: NULL
  */
-int _strcmp(char *s1, char *s2)
+char *_strstr(char *haystack, char *needle)
 {
-	char *string1, *string2;
+	 int i;
 
-	while (*s1 != NULL)
-	{
-		if (*s1 == *s2)
+	 if (*needle == 0)
+	 {
+	 	return (haystack);
+	 }
+
+	 while (*haystack)
+	 {
+	 	i = 0;
+
+		if (haystack[i] == needle[i])
 		{
-			string1 = s1;
-			string2 = s2;
-
-			while (*string1 && *string2)
-			{
-				if (*string1 != *string2)
-				{
-					break;
-				}
-
-				string1++;
-				string2++;
-				
-			}
-
-			if (*string2 == NULL)
-				return (s1);
+			do {
+				if (needle[i + 1] == '\0')
+					return (haystack);
+				i++;
+			} while (haystack[i] == needle[i]);
 		}
+		haystack++;
+	 }
 
-		s1++;
-	}
-
-	return (NULL);
+	 return (NULL);
 }
