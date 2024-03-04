@@ -12,17 +12,16 @@ void print_chessboard(char (*a)[8])
 	wide = 0;
 	length = 0;
 
-	if (wide < 8)
+	while (wide < 8)
 	{
-		wide = length = 0;
-		_putchar(a[wide][length]);
-		length++;
+		length = 0;
+		while (length < 8)
+		{
+			_putchar(a[wide][length]);
+			length++;
+		}
+
+		_pucthar('\n');
+		wide++
 	}
-	if (length < 8)
-	{
-		wide = length = 0;
-		_putchar(a[wide][length]);
-		wide++;
-	}
-	_putchar('\n');
 }
