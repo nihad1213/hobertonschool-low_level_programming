@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _pow_recursoion - find value of x raised to
+ * _pow_recursion - find value of x raised to
  * the power of y
  * @x: number1
  * @y: number2
