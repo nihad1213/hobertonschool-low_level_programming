@@ -2,17 +2,19 @@
 /**
  * _puts_recursion - print string followed by new line
  * @s: string
- * Return: 
+ * Return: void
  */
 void _puts_recursion(char *s)
 {
-	if (*s == "0")
+	if (s[0] == '0')
 	{
-		return (*s);
+		_putchar('\n');
 	}
 	else
 	{
-		_puts('\n');
-		return (_puts_recursion(*s - 1));
+		/*Print first character*/
+		_putchar(s);
+		/*Print next character*/
+		_putchar(s+1);
 	}
 }
