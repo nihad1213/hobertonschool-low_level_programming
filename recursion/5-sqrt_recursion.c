@@ -7,12 +7,12 @@
  */
 int _sqrt_recursion(int n)
 {
+	int i = 0;
+	int result = 0;
+	
 	if (n == 0 || n == 1) {
        		return (n);
     	}
-    
-    	int i = 0;
-	int result = 0;
     
     	while (result <= n) {
         	i++;
