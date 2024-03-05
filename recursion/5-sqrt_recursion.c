@@ -11,10 +11,8 @@ int _sqrt_recursion(int n)
        		return (n);
     	}
     
-    	int i;
-	int result;
-	i = 0;
-	result = 0;
+    	int i = 0;
+	int result = 0;
     
     	while (result <= n) {
         	i++;
