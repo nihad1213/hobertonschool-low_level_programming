@@ -12,7 +12,6 @@ int main(int argc, char *argv[])
 {
 	int result = 1;
 	int i;
-	
 	if (argc == 1 || argc == 2)
 	{
 		printf("Error\n");
