@@ -2,9 +2,9 @@
 
 /**
  * main - return name
- * Return - 0
  * @argc: store number of arguments
  * @argv: listing all arguments
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
