@@ -4,9 +4,9 @@
 
 int isNumber(const char *str)
 {
-	while(*str)
+	while (*str)
 	{
-		if(!isdigit(*str))
+		if (!isdigit(*str))
 		{
 			return 0;
 		}
@@ -15,8 +15,6 @@ int isNumber(const char *str)
 
 	return 1;
 }
-
-
 
 
 /**
