@@ -2,6 +2,10 @@
 #include <ctype.h>
 #include <stdlib.h>
 
+/**
+ * isNumber - check entered character is number 
+ * or not
+ */
 int isNumber(const char *str)
 {
 	while (*str)
