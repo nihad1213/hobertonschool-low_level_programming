@@ -2,7 +2,7 @@
 
 /**
  * main - return name
- * return - 0
+ * Return - 0
  * @argc: store number of arguments
  * @argv: listing all arguments
  */
