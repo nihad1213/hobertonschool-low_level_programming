@@ -5,6 +5,8 @@
 /**
  * isNumber - check entered character is number
  * or not
+ * @str: string
+ * Return: 0 if not digit 1 if digit
  */
 int isNumber(const char *str)
 {
