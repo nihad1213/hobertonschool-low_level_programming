@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	for (i = 1; i < argc; i++)
+	for (i = 0; i < argc; i++)
 	{
 		result = result * strtol( argv[i], NULL, 10 );
 	}
