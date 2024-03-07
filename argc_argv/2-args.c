@@ -10,6 +10,11 @@ int main(int argc, char *argv[])
 {
 	int i;
 
+	if (argv == '\0')
+	{
+		putchar('\n');
+	}
+	
 	for(i = 0; i <= argc; i++)
 	{
 		printf("%s", argv[i]);
