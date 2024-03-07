@@ -10,17 +10,14 @@
  */
 int main(int argc, char *argv[])
 {
-	int result;
 	
 	if (argc < 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	
-	result = *argv[1] * *argv[2];
-	result = atoi(result);
-	printf("%d\n", result);
+
+	printf("%d\n", argv[1] * argv[2]);
 
 	return (0);
 
