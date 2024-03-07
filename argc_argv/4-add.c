@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * isNumber - check entered character is number 
+ * isNumber - check entered character is number
  * or not
  */
 int isNumber(const char *str)
