@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
 {
 	int result = 1;
 	int i;
+	
 	if (argc < 2)
 	{
 		printf("Error\n");
@@ -21,7 +22,7 @@ int main(int argc, char *argv[])
 	{
 		for(i = 1; i < 3; i++)
 		{
-			result = result * atoi(*argv[i]); 
+			result = result * atoi(argv[i]); 
 		}
 
 		printf("%d\n", result);
