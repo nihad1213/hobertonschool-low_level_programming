@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <stdlib.h>
 
 /**
  * main - add positive numbers
@@ -21,7 +22,7 @@ int main(int argc, char *argv[])
 			printf("0\n");		
 		}
 
-		result = result + argv[i];
+		result = result + atoi(argv[i]);
 
 	}
 
