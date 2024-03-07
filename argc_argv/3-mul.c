@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
-		result = result * argv[i];
+		result = result * strtol( argv[i], NULL, 10 );
 	}
 
 	printf("%d\n", result);
