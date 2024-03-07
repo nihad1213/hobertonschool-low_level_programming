@@ -2,6 +2,23 @@
 #include <ctype.h>
 #include <stdlib.h>
 
+int isNumber(const char *str)
+{
+	while(*str)
+	{
+		if(!isdigit(*str))
+		{
+			return 0;
+		}
+		str++;
+	}
+
+	return 1;
+}
+
+
+
+
 /**
  * main - add positive numbers
  * @argc: number of arguments
@@ -17,6 +34,10 @@ int main(int argc, char *argv[])
 
 	for (i = 1; i < argc; i++)
 	{
+		if (!isnNumber(argv[i]))
+		{
+			
+		}
 		result = result + atoi(argv[i]);
 	}
 
