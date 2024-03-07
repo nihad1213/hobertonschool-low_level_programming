@@ -36,7 +36,8 @@ int main(int argc, char *argv[])
 	{
 		if (!isNumber(argv[i]))
 		{
-			
+			printf("Error\n");
+			return 1;
 		}
 		result = result + atoi(argv[i]);
 	}
