@@ -8,12 +8,12 @@ int isNumber(const char *str)
 	{
 		if (!isdigit(*str))
 		{
-			return 0;
+			return (0);
 		}
 		str++;
 	}
 
-	return 1;
+	return (1);
 }
 
 
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 		if (!isNumber(argv[i]))
 		{
 			printf("Error\n");
-			return 1;
+			return (1);
 		}
 		result = result + atoi(argv[i]);
 	}
