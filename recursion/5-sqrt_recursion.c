@@ -1,4 +1,14 @@
 #include "main.h"
+
+int sqrt2(int a, int b)
+{
+	if (b * b == a)
+		return (b);
+	else if (b * b > a)
+		return (-1);
+	return (sqrt2(a, b + 1));
+}
+
 /**
  * _sqrt_recursion - return natural square root
  * of number
@@ -7,17 +17,5 @@
  */
 int _sqrt_recursion(int n)
 {
-	int i = 0;
-	int result = 0;
-	
-	if (n == 0 || n == 1) {
-       		return (n);
-    	}
-    
-    	while (result <= n) {
-        	i++;
-        	result = i * i;
-    	}
-    
-    	return (i - 1);	
+	return (sqrt2(n, 1));	
 }
