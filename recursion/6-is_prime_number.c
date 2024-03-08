@@ -2,7 +2,8 @@
 /**
  * prime_finder - return 1 if it is prime number
  * otherwise 0
- * @n: integer number
+ * @x: integer number 1
+ * @y: integer number 2
  * Return: return 1 if it is prime number
  * otherwise 0
  */
