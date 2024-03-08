@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * sqrt2 - check number have sqrt
+ * @a: integer 1
+ * @b: integer 2
+ * Return: b if b * b = a
+ * -1 if b * b > a
+*/
 int sqrt2(int a, int b)
 {
 	if (b * b == a)
