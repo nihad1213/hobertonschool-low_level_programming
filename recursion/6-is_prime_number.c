@@ -4,7 +4,7 @@
  * otherwise 0
  * @n: integer number
  * Return: return 1 if it is prime number
- * otherwise 0 
+ * otherwise 0
  */
 int prime_finder(int x, int y)
 {
