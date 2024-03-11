@@ -11,33 +11,25 @@
  */
 char *_strdup(char *str)
 {
-	int length = 0;
+	int size = 0;
 	char *source;
 	char *target;
 
-	if (str == NULL)
-	{
+	if (!str)
 		return (NULL);
-	}
 
 	source = str;
-
 	while (*source++)
-		length++;
-	
-	target = malloc(length + 1);
+		size++;
 
-	if (target == NULL)
-	{
+	target = malloc(size + 1);
+	if (!target)
 		return (NULL);
-	}
 
 	source = target;
-
 	while (*str)
-		*source++ = *target++;
+		*source++ = *str++;
 
 	*source = 0;
-
 	return (target);
 }
