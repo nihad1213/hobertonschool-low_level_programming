@@ -30,9 +30,9 @@ char *str_concat(char *s1, char *s2)
 	char *p, *q, *result;
 	
 	if (s1 == 0)
-		s1 = " ";
+		s1 = "";
 	if (s2 == 0)
-		s2 = " ";
+		s2 = "";
 	
 	result = q = malloc(_strlen(s1) + _strlen(s2) + 1);
   	for (p = s1; (*q = *p) != '\0'; ++p, ++q) {}
