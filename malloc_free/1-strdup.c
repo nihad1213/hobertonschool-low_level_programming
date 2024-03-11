@@ -19,7 +19,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);	
 	}
-	
+
 	while (source[length])
 	{
 		length++;
