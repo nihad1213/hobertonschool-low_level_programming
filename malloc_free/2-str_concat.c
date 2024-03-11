@@ -39,7 +39,5 @@ char *str_concat(char *s1, char *s2)
 	for (p = s1; (*q = *p) != '\0'; ++p, ++q) {}
   	for (p = s2; (*q = *p) != '\0'; ++p, ++q) {}
   	
-	free(p);
-	free(q);
 	return (result);	
 }
