@@ -4,8 +4,7 @@
 char *str_concat(char *s1, char *s2)
 {
 	int a, b, c, d;
-	char *s;
-	
+	char *s;	
 	if (s1 == 0)
 		s1 = "";
 	if (s2 == 0)
