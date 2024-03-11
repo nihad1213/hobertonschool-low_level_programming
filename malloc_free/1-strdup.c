@@ -23,7 +23,7 @@ char *_strdup(char *str)
 	sourceString = (char*)malloc(sizeof(*str) * (length + 1));
 
 	while (*str)
-		*sorceString++ = *str++;
+		*sourceString++ = *str++;
 	*sourceString = '\0';
 
 	return (sourceString);
