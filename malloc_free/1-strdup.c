@@ -15,6 +15,11 @@ char *_strdup(char *str)
 	char *p;
 	int length = 0;
 
+	if (str == NULL)
+	{
+		return (NULL);	
+	}
+	
 	while (source[length])
 	{
 		length++;
