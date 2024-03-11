@@ -12,7 +12,7 @@
 char *_strdup(char *str)
 {
 	char *source;
-	int length;
+	int length = 0;
 
 	while (source[length])
 	{
