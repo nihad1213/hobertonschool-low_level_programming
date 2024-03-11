@@ -12,7 +12,7 @@
 char *_strdup(char *str)
 {
 	size_t length = 0;
-	char *duplicateString;
+	/*char *duplicateString;*/
 	size_t index;
 
 	while (str[length] != '\0')
@@ -34,7 +34,7 @@ char *_strdup(char *str)
 
 	for (index = 0; index <= length; index++)
 	{
-		duplicateString = str[i];
+		duplicateString = str[index];
 	}
 
 	return (duplicateString);
