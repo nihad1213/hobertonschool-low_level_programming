@@ -12,21 +12,22 @@
 char *_strdup(char *str)
 {
 	char *source;
+	char *p;
 	int length = 0;
 
 	while (source[length])
 	{
 		length++;
 	}
-
-	source = (char *)malloc(sizeof(*str) * (length - 1));
 	
-	while(*source)
-	{
-		*str++ = *source++;
-	}
+	source = malloc(len + 1);
+	p = source;
 
-	*source = '\0';
+	while (*str)
+	{
+		*p++ = *str++;
+	}
+	p = '\0';
 
 	return (source);
 }
