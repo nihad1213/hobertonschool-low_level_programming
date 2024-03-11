@@ -11,21 +11,33 @@
  */
 char *_strdup(char *str)
 {
-	char *sourceString;
 	int length = 0;
+	char *source;
+	char *target;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	while (sourceString[length] = 0)
+	source = str;
+
+	while (*source++)
 		length++;
-	sourceString = (char*)malloc(sizeof(*str) * (length + 1));
+	
+	target = malloc(length + 1);
+
+	if (target == NULL)
+	{
+		return (NULL);
+	}
+
+	source = target;
 
 	while (*str)
-		*sourceString++ = *str++;
-	*sourceString = '\0';
+		*source++ = *target++;
 
-	return (sourceString);
+	*source = 0;
+
+	return (target);
 }
