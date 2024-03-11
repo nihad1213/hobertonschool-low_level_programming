@@ -11,14 +11,14 @@
  */
 char *_strdup(char *str)
 {
+	char *sourceString;
+	char *p;
+	int length = 0;
+
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-
-	char *sourceString;
-	char *p;
-	int length = 0;
 
 	while (sourceString[length])
 		length++;
