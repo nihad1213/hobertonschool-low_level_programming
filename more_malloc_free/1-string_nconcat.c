@@ -33,7 +33,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s == NULL)
 		return (NULL);
 
-	for (c = 0, d = 0; c < a + b; c++)
+	for (c = 0, d = 0; c < d + n; c++)
 	{
 		if (c < a)
 			s[c] = s1[c];
@@ -42,5 +42,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	return (s);
-}
+
 }
