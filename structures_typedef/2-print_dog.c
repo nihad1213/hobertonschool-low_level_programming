@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <string.h>
+#include <stdio.h>
 /**
  * print_dog - print strcut dog
  * @d: struct
@@ -8,7 +9,7 @@ void print_dog(struct dog *d)
 {
 	if (d == NULL)
 	{
-		printf("");
+		printf(" ");
 	}
 	if (d->name == NULL)
 	{
