@@ -9,20 +9,20 @@ void print_dog(struct dog *d)
 {
 	if (d == NULL)
 	{
-		printf(" ");
+		return;
 	}
 	if (d->name == NULL)
 	{
-		d->name = "nill";
+		d->name = "(nill)";
 	}
 	if (d->age == NULL)
 	{
-		d->age = "nill";
+		d->age = "(nill)";
 	}
 	if (d->owner == NULL)
 	{
-		d->owner == "nill";
+		d->owner == "(nill)";
 	}
 
-	printf("Name: %s\nAge: %f\n Owner: %lf", d->name, d->age, d->owner);
+	printf("Name: %s\nAge: %f\n Owner: %s", d->name, d->age, d->owner);
 }
