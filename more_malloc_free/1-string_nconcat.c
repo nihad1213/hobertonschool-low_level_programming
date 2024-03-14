@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * str_concat - concat 2 string
+ * string_nconcat - concat 2 string
  * @s1: string 1
  * @s2: string 2
  * @n: bytes
