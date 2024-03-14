@@ -7,7 +7,7 @@
  * @size: size
  * Return: nmem or size equasl 0 return NULL 
  */
-void *_calloc(unsigned int nmemb; unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *p;
 	unsigned int i, d;
