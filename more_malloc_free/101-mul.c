@@ -17,17 +17,32 @@ int multiply(int num1, int num2)
  * @num2: Second string
  * Return: 1 if valid, 0 if not
  */
+int _isdigit(char *argv)
+{
+	int i;
+
+	i = 0;
+	while (argv[i])
+	{
+		if (argv[i] >= '0' && argv[i] <= '9')
+			i++;
+		else
+			return (1);
+	}
+	return (0);
+}
+
 int is_valid_input(const char *num1, const char *num2)
 {
     while (*num1 != '\0')
     {
-        if (!isdigit(*num1))
+        if (!_isdigit(*num1))
             return 0;
         num1++;
     }
     while (*num2 != '\0')
     {
-        if (!isdigit(*num2))
+        if (!_isdigit(*num2))
             return 0;
         num2++;
     }
