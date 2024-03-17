@@ -36,7 +36,7 @@ int is_valid_input(const char *num1, const char *num2)
 {
     while (*num1 != '\0')
     {
-        if (!_isdigit(int(*num1)))
+        if (!_isdigit(int*(num1)))
             return 0;
         num1++;
     }
