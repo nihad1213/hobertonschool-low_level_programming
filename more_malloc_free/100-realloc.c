@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _realloc - reallocates a memory block using malloc and free
  * @ptr: pointer
