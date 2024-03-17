@@ -1,5 +1,5 @@
-#include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
   * _isdigit - tells if the string consists of digits
   * @argv: pointer to current item in argument
