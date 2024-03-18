@@ -4,11 +4,10 @@
 /**
  * print_name: print name
  * @name: name
+ * @f(): function pointer take string as a argument
  * Return: void
  */
 void print_name(char *name, void (*f)(char *))
 {
-	char newName;
-	*name = newName;
-	f(newName);
+	f(name);
 }
