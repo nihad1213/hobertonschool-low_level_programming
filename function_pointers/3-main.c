@@ -11,7 +11,7 @@
  */
 int main(int argc, char *argv[])
 {
-        int i, j;
+        int a, b;
         int (*o)(int, int);
 
         if (argc != 4)
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
                 printf("\nERROR");
         }
 
-        0 = get_op_func(argv[2]);
+        o = get_op_func(argv[2]);
 
         if (o == NULL)
         {
