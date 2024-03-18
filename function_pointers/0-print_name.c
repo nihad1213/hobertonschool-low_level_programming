@@ -8,5 +8,7 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	name = f();
+	char newName;
+	*name = newName
+	f(newName);
 }
