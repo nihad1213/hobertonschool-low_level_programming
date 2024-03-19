@@ -9,7 +9,7 @@
  * @argv: list of arguments
  * Return: Always 0
  */
-int main()
+int main(int argc, char *argv[])
 {
     int a, b;
     int (*o)(int, int);
