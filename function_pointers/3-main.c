@@ -1,11 +1,10 @@
 #include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
- * main - main
- * @argc: numner of arguments
+ * main - calc
+ * @argc: number of arguments
  * @argv: list of arguments
  * Return: Always 0
  */
