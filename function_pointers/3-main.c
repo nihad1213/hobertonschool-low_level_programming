@@ -9,32 +9,30 @@
  * @argv: list of arguments
  * Return: Always 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	char op;
-	int (*op_func)(int, int);
-	int result;
+	int a, b, ans;
+	int (*fp)(int, int);
 
 	if (argc != 4)
 	{
 		printf("Error\n");
-		return (98);
+		exit(98);
 	}
-	op = *(argv[2]);
-	if ((op == '/' || op == '%') && !atoi(argv[3]))
-	{ /* divide by zero exception */
+	if (get_op_func(argv[2]) == NULL || argv[2][1] != '\0')
+	{
 		printf("Error\n");
-		return (100);
+		exit(99);
 	}
-
-	/* actually do the operation now that we've error chcked */
-	op_func = get_op_func(&op);
-	if (op_func == NULL || argv[2][1] != '\0')
-	{ /* didn't find operator, or operator longer than 1 byte */
+	if ((*argv[2] == '%' || *argv[2] == '/') && (*argv[3] == '0'))
+	{
 		printf("Error\n");
-		return (99);
+		exit(100);
 	}
-	result = op_func(atoi(argv[1]), atoi(argv[3]));
-	printf("%d\n", result);
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+	fp = get_op_func(argv[2]);
+	ans = fp(a, b);
+	printf("%d\n", ans);
 	return (0);
 }
