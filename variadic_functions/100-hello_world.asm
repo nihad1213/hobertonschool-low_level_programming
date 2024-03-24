@@ -1,5 +1,5 @@
 .data
-message:  .asciiz "Hello, World\n"
+      message:  .asciiz "Hello, World\n"
 .text
 main:
       li v0, 4
