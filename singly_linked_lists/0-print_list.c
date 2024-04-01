@@ -19,7 +19,7 @@ size_t print_list(const list_t *h)
 			_putchar(']');
 			_putchar(' ');
 			_putchar('(');
-			_puthcar('n');
+			_putchar('n');
 			_putchar('i');
 			_putchar('l');
 			_putchar(')');
