@@ -8,30 +8,13 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t nodes = 0;
+	size_t i = 0;
 
 	while (h)
 	{
-		if (h->str == NULL)
-		{
-			_putchar('[');
-			_putchar('0');
-			_putchar(']');
-			_putchar(' ');
-			_putchar('(');
-			_putchar('n');
-			_putchar('i');
-			_putchar('l');
-			_putchar(')');
-		}
-		else
-		{
-			printf("[%d] %s", h->len, h->str);
-		}
-
-		nodes++;
+		printf("%d\n", h->n);
 		h = h->next;
+		++i;
 	}
-
-	return (nodes);
+	return (i);
 }
