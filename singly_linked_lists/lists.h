@@ -1,6 +1,17 @@
 #ifndef _LISTS_H
 #define _LISTS_H
 
+#include <unistd.h>
+/**
+ * _putchar - print character
+ * c: character
+ * Return: only one character
+ */
+int _putchar(char c)
+{
+	return(write(1, &c, 1));
+}
+
 /**
  * struct list_s - singly linked list
  * @str: string - (malloc'ed string)
